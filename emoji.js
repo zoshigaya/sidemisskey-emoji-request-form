@@ -57,8 +57,14 @@ $(function(){
             $(".id-error").show();
             count++;
         }
+        
         if(!$(".request-number").val()){
             $(".number-error").show();
+            count++;
+        }
+
+        if(!$(".mail-address").val()){
+            $(".mail-error").show();
             count++;
         }
 
