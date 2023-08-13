@@ -43,7 +43,7 @@ $(function(){
           $(this).closest('.emoji-request-form').remove();
         }
         $(".emoji-request-form").each(function(index){
-            $(this).find(".form-label").text((index+1)+"つ目");
+            $(this).find(".form-label").text((index+1)+".");
             $(this).find(".form-control").attr('id', "emoji"+(index+1));
             $(this).find(".form-control").attr('name', "requestWord"+(index+1));
             $(this).find(".form-label").attr('for', "emoji"+(index+1));
