@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <head>
+        <title>絵文字リクエストフォーム</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="emoji.js"></script>
+        <link rel="stylesheet" href="common.css"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="text-center pt-3">絵文字リクエストフォーム</h2>
+            <p class="mt-4 mx-3 setumei">PayPal(カレーバッジ)にてご支援してくださった方向けの絵文字リクエストフォームです。<br>
+                カレーバッジが名前の横から消えていても、申請権が残っていれば絵文字申請は可能です。
+            </p>
+            <hr class="mb-4">
+            <form class="mx-2" action="https://script.google.com/macros/s/AKfycbw6yDikygQdKagBjwe8XlHn3pP9LPlBejhdsu_Ac_nx8govXk7WKYHfoLf2HDs0kl04Gg/exec" method="POST" id="google">
+                <div class="form-yade mb-4">
+                    <label for="idForm" class="form-label fw-bold">1.さいどみすきーIDをご記載ください。</label>
+                    <input type="text" class="form-control misskey-id" name="misskeyId" id="idForm" placeholder="@sidemisskey">
+                    <p class="alert alert-danger error-message id-error mt-2">さいどみすきーIDを入力してください</p>
+                </div>
+                <div class="form-yade mb-4">
+                    <label for="numForm" class="form-label "><p class="fw-bold">2.絵文字申請枠のうち、いくつをリクエスト絵文字として申請しますか？</p>
+                        <p class="ms-2">リクエストしたい個数のみを記述ください。</p></label>
+                    <input type="number" class="form-control request-number" name="requestNumber" id="numForm">
+                    <p class="alert alert-danger error-message number-error mt-2">リクエストしたい個数を入力してください。</p>
+                </div>
+                <p class="fw-bold">3.絵文字としてリクエストしたい文言をお書きください。</p>
+                <p class="ms-2">文言の元ネタもあればご記載ください。(色などのデザインの参考なります)<br>
+                    採用されない場合を考慮して、リクエスト数より多めにご記載ください。<br>
+                </p>
+                <p class="border rounded ex"> 記載例：<br>
+                    ・あまい(元ネタ：Fresh☆ｲﾁｺﾞ尽くし内 硲道夫セリフ)<br>
+                    ・うまい(元ネタ：Fresh☆ｲﾁｺﾞ尽くし内 硲道夫セリフ)<br>
+                    ・すごい(元ネタ：Fresh☆ｲﾁｺﾞ尽くし内 硲道夫セリフ)<br>
+                    ・知見ライス(元ネタ：特になし)
+                </p>
+                
+                
+                <div class="emoji-request-form-area form-yade">
+                    <div class="emoji-request-form no-delete input-group my-2">
+                        <label for="emoji" class="form-label d-flex align-items-end">1つ目</label>
+                        <input type="text" class="form-control request-word" id="emoji" name="requestWord">
+                        <span class="btn btn-danger delete-btn">-</span>
+                    </div>
+                </div>
+                <p class="alert alert-danger error-message word-error">リクエストしたい文言を入力してください。</p>
+
+                <div class="d-flex justify-content-end my-3 pb-3">
+                    <div class="btn btn-info form-huyasu">＋</div>
+                </div>
+            </div>
+            <input type="hidden" class="request-word-length" name="requestWordLength"/>
+            <div class="d-flex justify-content-center mb-5">
+                <div class="btn btn-primary soushin-btn">送信</div>
+            </div>
+        </form>
+    </body>
+</html>

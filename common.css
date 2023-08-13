@@ -1,0 +1,38 @@
+.error-message{
+    display:none;
+}
+
+body{
+    background:#deefed;
+}
+
+.container{
+    background:#F4F5F7;
+}
+
+.form-check,.form-yade{
+    margin-bottom:0.5rem;
+}
+
+.ex{
+    background:white;
+    padding:1rem;
+    margin-bottom:2rem;
+}
+
+.form-huyasu{
+    background:#0F9D90;
+    border-color: #0F9D90;
+    color:white;
+}
+
+.form-huyasu:hover,.form-huyasu:active{
+    background:#0a635b;
+    border-color: #0a635b;
+    color:white;
+}
+
+.delete-btn{
+    background:#E34241;
+    border-color: #E34241;
+}

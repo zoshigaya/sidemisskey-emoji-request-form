@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <title>絵文字リクエストフォーム</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="emoji.js"></script>
+        <link rel="stylesheet" href="common.css"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="text-center pt-3">絵文字リクエストフォーム</h2>
+            <p class="mt-4 mx-3 setumei">PayPal(カレーバッジ)にてご支援してくださった方向けの絵文字リクエストフォームです。<br>
+                カレーバッジが名前の横から消えていても、申請権が残っていれば絵文字申請は可能です。
+            </p>
+            <hr class="mb-4">
+            <p class="alert alert-danger error-message">チェックされていない項目があります。<br>すべての項目に同意していただかないと絵文字のリクエストを受け付けることができません。</p>
+            <form class="mx-2">
+                <div class="form-check">
+                    <label class="form-label">
+                        <input type="checkbox" class="form-check-input" value="運営制作">
+                        絵文字はさいどみすきー運営が制作します。
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-label">
+                        <input type="checkbox" class="form-check-input" value="運営制作">
+                        制作された絵文字の著作権はさいどみすきー運営が管理します。
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-label">
+                        <input type="checkbox" class="form-check-input" value="運営制作">
+                        リクエスト内容によっては採用されない場合があります。
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-label">
+                        <input type="checkbox" class="form-check-input" value="運営制作">
+                        制作する絵文字は実装まで確認することができません。
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-label">
+                        <input type="checkbox" class="form-check-input" value="運営制作">
+                        制作された絵文字が不適切な用途で使用された場合などに、絵文字を削除する場合がございます。<br>※削除された場合の絵文字申請権は管理の都合上返還されません。
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-label">
+                        <input type="checkbox" class="form-check-input" value="運営制作">
+                        絵文字の制作は不定期です。
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-label">
+                        <input type="checkbox" class="form-check-input" value="運営制作">
+                        基本的に文字のみの絵文字となり、イラストがメインとなる絵文字は制作できません。
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-label">
+                        <input type="checkbox" class="form-check-input" value="運営制作">
+                        他のユーザー様からリクエストと同内容の絵文字が先に申請された場合は、そちらを優先いたします。
+                    </label>
+                </div>
+                <div class="d-flex justify-content-center pb-3 mb-5">
+                    <div class="btn btn-primary go-btn" value="次へ">次へ</div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
