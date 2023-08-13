@@ -21,12 +21,21 @@
                     <input type="text" class="form-control misskey-id" name="misskeyId" id="idForm" placeholder="@sidemisskey">
                     <p class="alert alert-danger error-message id-error mt-2">さいどみすきーIDを入力してください</p>
                 </div>
+                
                 <div class="form-yade mb-4">
                     <label for="numForm" class="form-label "><p class="fw-bold">2.絵文字申請枠のうち、いくつをリクエスト絵文字として申請しますか？</p>
                         <p class="ms-2">リクエストしたい個数のみを記述ください。</p></label>
                     <input type="number" class="form-control request-number" name="requestNumber" id="numForm">
                     <p class="alert alert-danger error-message number-error mt-2">リクエストしたい個数を入力してください。</p>
                 </div>
+
+                <div class="form-yade mb-4">
+                    <label for="mailForm" class="form-label "><p class="fw-bold">3.上記IDアカウントを登録した際に入力したメールアドレスをご記載ください。</p>
+                    <p class="ms-2">※支援者本人以外からの申請を防ぐため、登録情報からIDとメールアドレスが一致しているかの確認のみに使用します。メール送信などは行いません。</p></label>
+                    <input type="email" class="form-control mail-address" name="mailAddress" id="mailForm">
+                    <p class="alert alert-danger error-message mail-error mt-2">さいどみすきーに登録してあるメールアドレスを入力してください。</p>
+                </div>
+                
                 <p class="fw-bold">3.絵文字としてリクエストしたい文言をお書きください。</p>
                 <p class="ms-2">文言の元ネタもあればご記載ください。(色などのデザインの参考なります)<br>
                     採用されない場合を考慮して、リクエスト数より多めにご記載ください。<br>
