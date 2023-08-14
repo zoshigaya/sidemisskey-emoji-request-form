@@ -26,7 +26,7 @@ $(function(){
             for (var i = 0; i < inputList.length; i++) {
               inputList[i].value = "";
             }
-            element.find(".form-label").text((formCount+1)+"つ目");
+            element.find(".form-label").text((formCount+1)+".");
             element.find(".form-control").attr('id', "emoji"+(formCount+1));
             element.find(".form-control").attr('name', "requestWord"+(formCount+1));
             element.find(".form-label").attr('for', "emoji"+(formCount+1));
